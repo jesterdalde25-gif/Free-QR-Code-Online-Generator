@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE QR CODE Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="logo">QR<span>Flow</span></div>
+            <div class="controls">
+                <input type="text" id="url-input" placeholder="Paste your link here...">
+                <button id="generate-btn">Generate</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div id="qr-display-area">
+            <div id="qr-result" class="hidden">
+                <div class="qr-card">
+                    <h3>Your QR Code</h3>
+                    <div id="canvas-container">
+                        <img id="qr-image" src="" alt="QR Code">
+                    </div>
+                    <p id="qr-link-display"></p>
+                    <button id="download-btn" class="secondary-btn">Download PNG</button>
+                </div>
+            </div>
+            
+            <div id="placeholder-text">
+                <p>Enter a URL above to generate your QR code.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

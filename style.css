@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 100px;
+}
+
+/* Fixed Responsive Header */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.nav-container {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-size: 24px; font-weight: bold; }
+.logo span { color: #007bff; }
+
+/* Input and Buttons */
+.controls { display: flex; gap: 10px; }
+
+#url-input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #2b2b2b;
+    color: white;
+    width: 250px;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#generate-btn { background-color: #007bff; color: white; }
+#generate-btn:hover { background-color: #0056b3; }
+
+#clear-btn { background-color: #444; color: white; }
+
+/* QR Result Area */
+#qr-display-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.qr-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.hidden { display: none; }
+
+#qr-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.secondary-btn { background: #e9ecef; color: #333; margin-top: 10px; }
